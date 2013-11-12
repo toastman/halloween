@@ -1,0 +1,78 @@
+html, body {
+  min-height: 100%; }
+
+body {
+  margin: 0;
+  text-align: center;
+  background: #652b21;
+  font-family: "PT Mono", sans-serif; }
+
+section.section-main {
+  margin-top: 100px; }
+section header {
+  font-size: 1.6em;
+  letter-spacing: 1em; }
+
+svg {
+  height: 100%;
+  width: 100%; }
+
+#container {
+  margin-top: 100px; }
+
+.color-yellow-light {
+  color: #d7c8a3; }
+
+.color-red, .date {
+  color: #e85026; }
+
+.color-green-light {
+  color: #6abfb0; }
+
+.border-yellow-light, .date {
+  border: 1px solid #d7c8a3; }
+
+.date {
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 50px 0 45px 0;
+  display: inline-block; }
+  .date:hover {
+    box-shadow: 0 0 10px #d7c8a3; }
+
+#skullMain, .skull {
+  height: 240px;
+  width: 200px;
+  display: inline-block;
+  margin: 0 2em; }
+
+.skull-bg-2 {
+  height: 150px;
+  width: 100px; }
+
+.skull-bg-1 {
+  height: 200px;
+  width: 150px; }
+
+@media (max-width: 1024px) {
+  .skull-bg-2 {
+    position: absolute;
+    left: -100%; } }
+@media (max-width: 640px) {
+  #skullMain {
+    height: 200px;
+    width: 160px; }
+
+  #container {
+    margin-top: 30px; }
+
+  section.section-main {
+    margin-top: 20px; }
+  section .date {
+    margin: 30px 0 10px 0; }
+  section header {
+    letter-spacing: 0; }
+
+  .skull-bg-1 {
+    position: absolute;
+    left: -100%; } }

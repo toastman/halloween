@@ -1,0 +1,56 @@
+//Variables
+$color-yellow-light:#d7c8a3;
+$color-red:#e85026;
+$color-green-light:#6abfb0;
+
+html, body{ min-height:100%}
+body { margin:0; text-align: center; background: #652b21; font-family: 'PT Mono', sans-serif;}
+
+section {
+  &.section-main { margin-top: 100px;}
+  header { font-size: 1.6em; letter-spacing: 1em}
+}
+svg { height: 100%; width: 100%}
+
+#container{ margin-top: 100px; }
+
+.color-yellow-light{color:$color-yellow-light}
+.color-red{color:$color-red}
+.color-green-light{color:$color-green-light}
+
+.border-yellow-light{border:1px solid $color-yellow-light;}
+
+.date{
+  @extend .color-red;
+  @extend .border-yellow-light;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 50px 0 45px 0;
+  display: inline-block;
+
+  &:hover{
+    box-shadow: 0 0 10px $color-yellow-light;
+  }
+}
+
+#skullMain, .skull { height: 240px; width: 200px; display: inline-block; margin: 0 2em }
+
+.skull-bg-2 { height: 150px; width: 100px}
+.skull-bg-1 { height: 200px; width: 150px}
+
+@media (max-width: 1024px) {
+  .skull-bg-2 {position: absolute; left: -100%}
+}
+
+@media (max-width: 640px) {
+  #skullMain{ height: 200px; width: 160px; }
+  #container {margin-top: 30px}
+
+  section{
+    &.section-main { margin-top: 20px;}
+    .date{ margin: 30px 0 10px 0}
+    header { letter-spacing: 0 }
+  }
+
+  .skull-bg-1 {position: absolute; left: -100%}
+}
